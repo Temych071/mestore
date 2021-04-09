@@ -11,6 +11,9 @@
   </head>
   <body>
 
+<div class="wrapper">
+
+
     {% include 'app/modules/_header/_header.njk' %}
 
     <main class="main">
@@ -20,12 +23,14 @@
         {% include 'app/modules/_news/_news.njk' %}
 
         {% include 'app/modules/_discount/_discount.njk' %}
-
-        {% include 'app/modules/_brands/_brands.njk' %}
       </div>
+      {% include 'app/modules/_brands/_brands.njk' %}
+
     </main>
 
     {% include 'app/modules/_footer/_footer.njk' %}
+    
+    </div>
     <!---->
     <script src="js/main.min.js"></script>
   </body>

@@ -1,6 +1,9 @@
 .discount {
   margin-bottom: 80px;
   background-color: white;
+  padding: 67px 0 40px;
+  position: relative;
+  z-index: 5;
 
   &__title {
     font-weight: 900;

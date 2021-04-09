@@ -19,6 +19,11 @@ body {
   background-color: white;
   position: relative;
   background-image: url(../images/main-bg.jpg);
+  background-position: 0 -100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: -200px;
 }
 
 
