@@ -1,0 +1,15 @@
+
+.shop-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 45px;
+  color: white;
+  background-color: #3954d9;
+  border-radius: 20px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  @extend %Montserrat-400;
+  font-size: 13px;
+}

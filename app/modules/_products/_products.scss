@@ -1,0 +1,203 @@
+.products {
+  padding: 0 30px;
+  position: relative;
+  background-color: white;
+  margin-top: -75px;
+  margin-bottom: 80px;
+
+  &__preferences {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    padding-top: 50px;
+  }
+
+  &__feature {
+    max-width: 360px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+
+    &::before {
+      content: '';
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      position: absolute;
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: 5;
+    }
+
+    &::after {
+      content: '';
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      position: absolute;
+      top: -130px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      z-index: 3;
+    }
+  }
+
+  &__feature--plane {
+    &::before {
+      content: '';
+      background-image: url(../../images/icons/plane-solid.svg);
+      transform: translateX(-50%) rotateZ(-45deg);
+    }
+  }
+
+  &__feature--life-ring {
+    &::before {
+      background-image: url(../../images/icons/life-ring-regular.svg);
+    }
+  }
+
+  &__feature--clock {
+    &::before {
+      background-image: url(../../images/icons/clock-regular.svg);
+    }
+  }
+
+  &__feature-title {
+    display: block;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 7px;
+  }
+
+  &__sale {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-bottom: 110px;
+  }
+}
+
+.sale {
+  max-width: 540px;
+  width: 100%;
+  text-transform: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 250px 35px 45px;
+
+  &--first {
+    background-image: url(../../images/sale-banner-1.jpg);
+  }
+
+  &--second {
+    background-image: url(../../images/sale-banner-2.jpg);
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__title span{
+    font-size: 49px;
+    text-transform: none;
+    letter-spacing: -3px;
+    line-height: 0.85;
+    text-align: left;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+  }
+
+  &__button {
+    margin: 0;
+  }
+}
+
+.store {
+  text-align: center;
+  padding-bottom: 120px;
+
+  &__title {
+    font-weight: 800;
+    font-size: 26px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+}
+
+.store-slider {
+
+  &__item {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  &__image {
+    min-height: 300px;
+    margin: 0 auto 15px;
+  }
+
+  &__company {
+    margin-bottom: 15px;
+  }
+
+  &__old-price {
+    margin-right: 16px;
+  } 
+
+  &__button {
+    width: 22px;
+    height: 22px;
+    background-color: #cacaca;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transition: background-color 0.4s;
+    
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 18px;
+      height: 18px;
+    }
+
+    &:hover {
+      background-color: #f92357
+    }
+  }
+
+  &__button--slick-prev {
+    transform: translateX(-100%);
+    &::after {
+      background-image: url("../../images/icons/caret-left-solid.svg");
+    }
+  }
+
+  &__button--slick-next {
+    transform: translateX(50%);
+    &::after {
+      background-image: url("../../images/icons/caret-right-solid.svg");
+      left: 3px;
+    }
+  }
+}
+

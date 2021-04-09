@@ -1,0 +1,153 @@
+.header {
+  height: 100vh;
+  background-image: url(../../images/header_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__top {
+    background-color: rgba(white, 0.6);
+  }
+
+  &__up {
+    height: 55px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid #565e61;
+    font-size: 15px;
+  }
+
+  &__down {
+    height: 55px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__welcome {
+    font-weight: 500;
+  }
+
+  &__mail {
+    font-weight: 500;
+    margin-left: 85px;
+    margin-right: auto;  
+  }
+
+  &__mail-link {
+    font-weight: 700;
+    color: black;
+  }
+
+  &__lang--color {
+    font-weight: 800;
+    color: black;
+    text-transform: uppercase;
+    margin-right: 25px;
+  }
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  &__company-name {
+    font-weight: 900;
+    color: black;
+    font-size: 26px;
+  }
+
+  &__personals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color: black;
+    margin-right: 20px;
+    font-size: 17px;
+  }
+
+  &__center {
+    max-width: 720px;
+    height: calc(100vh - 110px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__year {
+    display: block;
+    font-size: 50px;
+    color: black;
+    font-weight: 800;
+    letter-spacing: 90px;
+    line-height: 0.85;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    margin-right: -90px;
+  }
+
+  &__text {
+    width: 90%;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto 75px;
+
+  }
+}
+
+.menu {
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+  }
+
+  &__item + li{
+    margin-left: 15px;
+  }
+
+  &__link {
+    font-weight: 700;
+    color: black;
+  }
+}
+
+.title {
+  font-size: 120px;
+
+  &__text {
+    margin: 0 auto;
+    display: block;
+    line-height: 0.75;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -10px;
+  }
+
+  &__up {
+    color: #222222;
+  }
+
+  &__down {
+    color: #f9236f;
+  }
+}
+
+.shop-now {
+  width: 160px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #f9236c;
+  font-size: 21px;
+  font-weight: 900;
+  border: none;
+  margin: 0 auto;
+}

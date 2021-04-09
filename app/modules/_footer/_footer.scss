@@ -1,0 +1,123 @@
+.footer {
+  background-image: url("../../images/footer_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 150px 10px 40px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+    margin-bottom: 80px;
+  }
+
+  &__address {
+    padding-left: 20px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 250px;
+      background-image: url(../../images/socials_2.png);
+      background-repeat: no-repeat;
+      background-position: 0px 5px;
+    }
+  }
+
+  &__address-link {
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 12px;
+  }
+
+  &__item--address {
+    max-width: 380px;
+    padding-left: 30px;
+    padding: 0 10px;
+  }
+
+  &__item--menu {
+    max-width: 250px;
+    padding: 0 10px;
+  }
+
+  &__item--contacts {
+    max-width: 350px;
+    padding: 0 10px;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: white;
+  }
+
+  &__menu-item {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+  }
+
+  &__menu--contacts {
+    max-width: 320px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 250px;
+      background-image: url(../../images/socials_1.jpg.png);
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__menu--contacts li{
+    padding-left: 35px;
+  }
+
+  &__menu-list {
+    margin-bottom: 10px;
+    width: 49%;
+  }
+
+  &__down-menu {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__menu--stripe {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__menu--stripe li + li {
+    margin-left: 30px;
+  }
+}
