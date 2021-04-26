@@ -4,6 +4,7 @@
   &__items {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__item {
@@ -80,4 +81,14 @@
     font-weight: 700;
     font-size: 13px;
   }
+}
+
+
+@media (max-width: 768px) {
+  .news {
+   
+     &__item {
+       margin: 0 auto 20px;
+     }
+  } 
 }

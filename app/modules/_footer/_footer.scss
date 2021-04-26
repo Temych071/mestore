@@ -122,3 +122,32 @@
     margin-left: 30px;
   }
 }
+
+@media (max-width: 550px) {
+  .footer {
+
+    &__address-link {
+      font-size: 13px;
+    }
+
+    &__title {
+      font-size: 16px;
+    }
+  
+    &__text {
+      font-size: 13px;
+    }
+  
+    &__link {
+      font-size: 13px;
+    }
+
+    &__item--address {
+      margin-bottom: 30px;
+    }
+
+    &__menu--stripe {
+      flex-wrap: wrap;
+    }
+  }
+}

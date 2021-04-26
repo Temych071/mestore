@@ -79,13 +79,13 @@
     justify-content: space-between;
     padding: 0 30px;
     margin-bottom: 110px;
+    width: 100%;
   }
 }
 
 .sale {
   max-width: 540px;
-  width: 100%;
-  text-transform: none;
+ text-transform: none;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,6 +101,7 @@
 
   &__title {
     margin-bottom: 20px;
+    width: 100%;
   }
 
   &__title span{
@@ -109,10 +110,12 @@
     letter-spacing: -3px;
     line-height: 0.85;
     text-align: left;
+    width: 100%;
   }
 
   &__text {
     margin-bottom: 25px;
+    width: 100%;
   }
 
   &__button {
@@ -201,3 +204,64 @@
   }
 }
 
+@media (max-width: 1239px) {
+  .products {
+
+    &__preferences {
+      flex-direction: column;
+    }
+
+    &__feature {
+      margin: 0 auto 40px;
+  
+      &::before {
+        top: -10px;
+        left: 10%;
+      }
+  
+      &::after {
+        top: -25px;
+        left: 0;
+      }
+    }
+
+    &__sale {
+      flex-wrap: wrap;
+      margin: 0 auto 40px;
+    }
+  } 
+
+  .sale {
+    margin: 0 auto 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .products {
+    padding: 15px 10px; 
+
+    &__preferences {
+      flex-direction: column;
+    }
+
+    &__feature-title {
+     font-size: 25px;
+     padding-left: 55px;
+    }
+
+    &__feature-text {
+      padding-left: 55px;
+     }
+
+    &__sale {
+      flex-wrap: wrap;
+      margin: 0 auto 40px;
+      padding: 0;
+    }
+  } 
+
+  .sale {
+    margin: 0 auto 20px;
+    padding: 20px 60px;
+  }
+}

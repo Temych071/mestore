@@ -11,19 +11,19 @@
   </head>
   <body>
 
-<div class="wrapper">
+    <div class="wrapper">
 
-
-    {% include 'app/modules/_header/_header.njk' %}
-
+      {% include 'app/modules/_header/_header.njk' %}
+      
     <main class="main">
-      <div class="container">
+      <!-- -->
         {% include 'app/modules/_products/_products.njk' %}
 
         {% include 'app/modules/_news/_news.njk' %}
 
         {% include 'app/modules/_discount/_discount.njk' %}
-      </div>
+      
+      
       {% include 'app/modules/_brands/_brands.njk' %}
 
     </main>
@@ -31,7 +31,7 @@
     {% include 'app/modules/_footer/_footer.njk' %}
     
     </div>
-    <!---->
+
     <script src="js/main.min.js"></script>
   </body>
 </html>

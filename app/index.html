@@ -11,10 +11,9 @@
   </head>
   <body>
 
-<div class="wrapper">
+    <div class="wrapper">
 
-
-    <header class="header">
+      <header class="header">
 
   <div class="header__top">
     <div class="container">
@@ -32,40 +31,46 @@
           <a class="header__company-name" href="#" >MeStore</a>
         </div>
 
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="#" class="menu__link">Home</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Shop</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Product</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Blog</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Portfolio</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Page</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="header__icons">
+          <nav class="menu">
 
-        <div class="header__search header__personals">
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </div>
-        <div class="header__cart header__personals">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <button class="menu__button"></button>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">Home</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Shop</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Product</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Blog</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Portfolio</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Page</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__search header__personals">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+          <div class="header__cart header__personals">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="header__center">
-    <div class="container">
+
+  <div class="container">
+    <div class="header__center">
+
       <div class="title">
         <span class="title__up title__text">Fashion</span>
         <span class="title__down title__text">Carnival</span>
@@ -77,17 +82,16 @@
   </div>
 
 </header>
-
+      
     <main class="main">
-      <div class="container">
+      <!-- -->
         <section class="products">
-
-  <div class="container">
+<!-- -->
     <div class="products__preferences">
 
       <div class="products__feature products__feature--plane">
         <span class="products__feature-title">Free Shipping</span>
-        <span class="text">With €50 or more orders</span>
+        <span class="products__feature-text">With €50 or more orders</span>
       </div>
 
       <div class="products__feature products__feature--life-ring">
@@ -215,8 +219,6 @@
 
     </div>
 
-  </div>
-
 </section>
 
         <div class="news">
@@ -299,7 +301,7 @@
 
     <div class="discount__inner">
       <div class="discount__title">Our Brands </div>
-      <img class="discount__image" src="../../images/account-banner.jpg" alt="" >
+      <img class="discount__banner" src="../../images/account-banner.jpg" alt="" >
       <div class="discount__title">Our Brands </div>
 
       <div class="discount__item shop-card">
@@ -416,7 +418,8 @@
     </form>
   </div>
 </section>
-      </div>
+      
+      
       <div class="brands">
   <div class="container">
     <div class="brands__image"></div>
@@ -560,7 +563,7 @@
 </footer>
     
     </div>
-    <!---->
+
     <script src="js/main.min.js"></script>
   </body>
 </html>
